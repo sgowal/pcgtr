@@ -17,25 +17,27 @@ All functions are heavily documented in the code.
 
 Solving the Rosenbrock function, given an initial starting point uniformly sampled between 0 and 2 for all n dimensions, yields the correct final solution in an average time of (using a single core of an Intel i7 2.7GHz processor with 100 runs): 
 
- n   |   Using sparseness   |   Not using sparseness
------+----------------------+----------------------------------
-   2 |        8.61 us       |           6.32 us
-   4 |       18.39 us       |          13.77 us
-   8 |       40.33 us       |          31.38 us
-  16 |       82.32 us       |          88.44 us
-  32 |      138.69 us       |         236.20 us
-  64 |      262.38 us       |         863.00 us
- 128 |      522.55 us       |       3'343.59 us 
- 256 |    1'035.23 us       |      12'935.90 us
- 512 |    1'970.24 us       |      49'911.36 us
-1024 |    4'025.77 us       |     219'008.00 us
-2048 |    9'179.77 us       |   1'055'101.06 us
-4096 |   19'243.42 us       |   4'708'783.17 us (10 runs only)
+| n    |   Using sparseness   |   Not using sparseness           |
+| ----:| --------------------:| --------------------------------:|
+|    2 |        8.61 us       |           6.32 us                |
+|    4 |       18.39 us       |          13.77 us                |
+|    8 |       40.33 us       |          31.38 us                |
+|   16 |       82.32 us       |          88.44 us                |
+|   32 |      138.69 us       |         236.20 us                |
+|   64 |      262.38 us       |         863.00 us                |
+|  128 |      522.55 us       |       3'343.59 us                |
+|  256 |    1'035.23 us       |      12'935.90 us                |
+|  512 |    1'970.24 us       |      49'911.36 us                |
+| 1024 |    4'025.77 us       |     219'008.00 us                |
+| 2048 |    9'179.77 us       |   1'055'101.06 us                |
+| 4096 |   19'243.42 us       |   4'708'783.17 us (10 runs only) |
 
 ### Compilation
 
 You can type `make` to compile the library, which will be located in the build folder.
+
 You can type `make examples` to compile the examples.
+
 You can execute the first example with `examples/example1 -h` to get help or to try the Rosenbrock example `examples/example2 2` with 2 variables.
 
 ### Enjoy!
